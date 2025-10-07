@@ -5,10 +5,10 @@ public class Main {
         // Obter a instância única do Singleton
         SistemaNoticias sistema = SistemaNoticias.getInstancia();
         
-        System.out.println("=== SISTEMA DE NOTÍCIAS ===\n");
+        System.out.println("### SISTEMA DE NOTÍCIAS ###\n");
         
         // Criar leitores
-        Leitor leitor1 = new Leitor("João");
+        Leitor leitor1 = new Leitor("Diogo");
         Leitor leitor2 = new Leitor("Maria");
         Leitor leitor3 = new Leitor("Pedro");
         Leitor leitor4 = new Leitor("Ana");
@@ -21,7 +21,7 @@ public class Main {
         sistema.inscrever("tecnologia", leitor1);
         sistema.inscrever("tecnologia", leitor4);
         
-        System.out.println("\n=== PUBLICANDO NOTÍCIAS ===\n");
+        System.out.println("\n### PUBLICANDO NOTÍCIAS ###\n");
         
         // Publicar notícias
         sistema.publicarNoticia("política", "Novo ministro é anunciado!");
@@ -30,7 +30,7 @@ public class Main {
         sistema.publicarNoticia("esportes", "Jogador quebra recorde histórico!");
         
         // Demonstrar que é o mesmo Singleton
-        System.out.println("\n=== VERIFICANDO SINGLETON ===");
+        System.out.println("\n### VERIFICANDO SINGLETON ###");
         SistemaNoticias sistema2 = SistemaNoticias.getInstancia();
         System.out.println("Mesma instância? " + (sistema == sistema2));
         

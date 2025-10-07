@@ -35,7 +35,7 @@ public class SistemaNoticias {
     // Publicar notícia em um tópico
     public void publicarNoticia(String topico, String noticia) {
         if (topicos.containsKey(topico)) {
-            System.out.println("\n📢 Publicando notícia em " + topico + ": " + noticia);
+            System.out.println("\nPublicando notícia em " + topico + ": " + noticia);
             topicos.get(topico).notificarObservers(noticia, topico);
         }
     }
